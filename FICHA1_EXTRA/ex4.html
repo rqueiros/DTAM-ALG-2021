@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA 1 (EXTRA) - EX4</title>
+</head>
+<body>
+    <script>
+
+        let value = +prompt('Qual o valor monetário?')
+        let currency = prompt('Qual a moeda (euros ou dólares)?')
+        
+        
+        if (currency == 'dólares') {            
+            console.log(`O resultado da conversão é ${value * 1.17}`);
+        } else if(currency == 'euros') {
+            console.log(`O resultado da conversão é ${value * 0.86}`);
+        } else {
+            console.log('Moeda inválida');
+        }
+
+        
+
+    </script>
+</body>
+</html>

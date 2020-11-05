@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA 1 (EXTRA) - EX3</title>
+</head>
+<body>
+    <script>
+
+        let temperature = +prompt('Qual a sua temperatura corporal?')
+
+        if (temperature >= 41) {
+            console.log('Hipertermia');
+        } else if(temperature >= 39.6 && temperature < 41) {
+            console.log('Febre alta');
+        } else if(temperature >= 37.6 && temperature <= 39.5) {
+            console.log('Febre');
+        } else if(temperature >= 36 && temperature < 37.5) {
+            console.log('Normal');
+        } else if(temperature < 36){
+            console.log('Hipotermia');
+        } else {
+            console.log('Valor inválido');
+        }
+        
+    </script>
+</body>
+</html>
