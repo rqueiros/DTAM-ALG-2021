@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA EXTRA - EX12</title>
+</head>
+
+<body>
+    <script>
+        
+        // Calcular um número aleatório
+        let randomNum = Math.floor(Math.random() * 100) + 1;
+        //alert(randomNum);
+        let num
+        let cont = 0
+        const NUM_ATTEMPTS = 5
+        do {
+            num = +prompt('Diga um numero?')
+            if (num > randomNum) {
+                alert('PARA BAIXO!');
+            } else if(num < randomNum) {
+                alert('PARA CIMA!');
+            } else {
+                alert('CERTO!');
+            }
+            cont++
+            alert(`Nº de tentativas: ${cont}`)
+        } while (num != randomNum && cont < NUM_ATTEMPTS);
+
+
+
+
+    </script>
+</body>
+
+</html>

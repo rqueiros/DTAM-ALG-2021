@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA EXTRA - EX11</title>
+</head>
+
+<body>
+    <script>
+        let operando1 = +prompt("Digite o 1º operando:")
+        let operando2 = +prompt("Digite o 2º operando:")
+        let operador = prompt("Digite o operador:")
+
+        // Abordagem de resposta com IFs
+        if (operador== '+') {
+            console.log(`${operando1 + operando2}`);                
+        } else if(operador== '-') {
+            console.log(`${operando1 - operando2}`);
+        } else if(operador== '*') {
+            console.log(`${operando1 * operando2}`);
+        } else if(operador== '/') {
+            if(operando2 == 0) {
+                console.log('Operação inválida!');
+            } else {
+                console.log(`${operando1 + operando2}`);
+            }            
+        } else {
+            console.log('Operador inválido!');
+        }
+
+        // Abordagem de resposta com switches
+        /* switch (operador) {
+            case '+':
+                console.log(`${operando1 + operando2}`);
+                break;
+            case '-':
+                console.log(`${operando1 - operando2}`);
+                break;
+            case '*':
+                console.log(`${operando1 * operando2}`);
+                break;
+            case '/':
+                if (operando2 == 0) {
+                    console.log('Operação inválida!');
+                } else {
+                    console.log(`${operando1 / operando2}`);
+                }
+                break;
+            default:
+                console.log('Operador inválido!');
+                break;
+        } */
+
+    </script>
+</body>
+
+</html>

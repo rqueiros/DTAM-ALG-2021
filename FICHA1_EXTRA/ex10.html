@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA EXTRA - EX10</title>
+</head>
+<body>
+    <script>
+        let num = +prompt("Digite um numero:")
+        let cont = 0
+        for (let i = 1; i <= num; i++) {
+            if (num % i == 0) {
+                cont++
+            }
+        }
+
+        if (cont == 2) {
+            console.log(`${num} é primo!`);
+        } else {
+            console.log(`${num} não é primo!`);
+        }
+
+
+    </script>
+</body>
+</html>
