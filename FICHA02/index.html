@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA02</title>
+</head>
+
+<body>
+    <script>
+        // Exercicio 1
+        function showMessage() {
+            console.log('OLÁ MUNDO!')
+        }
+
+        /* showMessage()
+        showMessage()
+        showMessage() */
+
+        // Exercicio 2a)
+
+        function showHi(name) {
+            alert(`Olá, ${name}`)
+        }
+
+        let name = 'Rui'
+        //showHi(name)
+
+        // Exercicio 2b)
+        function calcRectangleArea(a, b) {
+            alert(`A área do retângulo é ${a * b}`)
+        }
+
+        //let a = 2, b = 4
+        //calcRectangleArea(a, b)
+
+
+
+
+        // Exercicio 2c)
+
+        function calcImc(w, h) {
+            let result = ''
+            let imc = w / (h * h)
+            // let imc = w / Math.pow(h, 2)
+            // let imc = w / h ** 2
+
+            if (imc < 18.5) {
+                result = 'Abaixo do peso'
+            } else if (imc >= 18.5 && imc <= 24.9) {
+                result = 'Peso normal'
+            } else if (imc >= 25 && imc <= 29.9) {
+                result = 'Sobrepeso'
+            } else if (imc >= 30 && imc <= 34.9) {
+                result = 'Obesidade grau I'
+            } else if (imc >= 35 && imc <= 39.9) {
+                result = 'Obesidade grau II'
+            } else if (imc >= 40) {
+                result = 'Obesidade grau III ou mórbida'
+            } else {
+                result = 'Valores inválidos!'
+            }
+
+            alert(`Resultado do IMC: ${imc} -> ${result}`)
+
+        }
+
+        // let weight = +prompt('Qual o teu peso? (em kg)')
+        // let height = +prompt('Qual a tua altura? (em metros)')
+
+        // calcImc(weight, height)
+
+        // Exercicio 2d)
+
+        function showEcho(word, n) {
+            let sum = ''
+            for (let i = 0; i < n; i++) {
+                sum = sum + word
+            }
+            alert(sum)
+        }
+
+        /* let word = prompt('Qual a palavra que quer ecoar?')
+        let n = +prompt('Quantas vezes quer ecoar a palavra?')
+
+        showEcho(word, n) */
+
+        // Exercício 2e)
+
+        function showNums(num1, num2) {
+            for (let i = num1; i < num2; i++) {
+                alert(i)
+            }
+        }
+
+        /* let num1 = +prompt('Digite um primeiro número?')
+        let num2 = +prompt('Digite um segundo número?')
+
+        showNums(num1, num2) */
+
+        // Exercicio 2f)
+        function calcSumMultiples(num1, num2) {
+            let sum = 0
+            for (let i = num1; i <= num2; i++) {
+                if (i % 3 == 0) {
+                    sum = sum + i
+                }
+            }
+
+            alert(sum)
+        }
+
+        /*  let num1 = +prompt('Digite um primeiro número?')
+         let num2 = +prompt('Digite um segundo número?')
+ 
+         calcSumMultiples(num1, num2) */
+
+        // Exercício 3a)
+        function min(a, b) {
+            if (a > b) {
+                return b
+            } else {
+                return a
+            }
+        }
+
+        /* let a = +prompt('Digite um primeiro número?')
+        let b = +prompt('Digite um segundo número?')
+
+        let result = min(a, b)
+        alert(result) */
+
+        // Exercício 3b)
+        function calcExp(b, e) {
+            let sum = 1
+            for (let i = 0; i < e; i++) {
+                sum = sum * b
+            }
+            return sum
+            // return b ** e
+            // return Math.pow(b, e)
+        }
+
+        let b = +prompt('Digite a base?')
+        let e = 0
+        do {
+            e = +prompt('Digite o expoente?')
+        } while (e < 1)
+
+        let result = calcExp(b, e)
+        alert(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
