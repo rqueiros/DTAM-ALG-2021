@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA03</title>
+</head>
+
+<body>
+    <script>
+
+        // Exercício 1a)
+        /* let s1 = prompt('Escreva a primeira string?')
+        let s2 = prompt('Escreva a segunda string?')
+
+        if (s1.length > s2.length) {
+            console.log(s1);
+        } else if (s1.length < s2.length) {
+            console.log(s2);
+        } else {
+            console.log('Ambas têm o mesmo tamanho!');
+        } */
+
+        // Exercício 1b)
+        /* let myStr = prompt('Escreva uma string?')
+        
+        if (myStr.indexOf('ss') != -1) {
+            console.log(myStr.length);
+        } */
+
+        // Exercício 1c)
+        /* let myStr = prompt('Escreva uma string?')
+        console.log(myStr.slice(0, 3))
+ */
+
+        // Exercício 1d)
+        /* let fullName = prompt('Escreva o seu nome (nome apelido)?')
+        let names = fullName.split(' ')
+        console.log(`${names[1]}, ${names[0]}`) */
+
+        // Exercício 1e)
+        /* let myStr = prompt('Escreva uma string?')
+        console.log(myStr.replace(/xx/g,'x'))
+ */
+
+        // Exercício 1f)
+        /* let myStr = prompt('Escreva uma string?')
+        for (let i = 1; i < myStr.length - 1; i++) {
+            console.log(myStr.charAt(i));            
+        }
+        // Alternativa sem uso do método charAt (string como array de caracteres)
+        for (let i = 1; i < myStr.length - 1; i++) {
+            console.log(myStr[i]);            
+        } */
+
+        // Exercício 1g)
+        /*  let count = 0
+         let myStr = prompt('Escreva uma string?')
+         myStr = myStr.toLowerCase()
+         for (let i = 0; i < myStr.length; i++) {
+             if (myStr[i] == 'a' || 
+             myStr[i] == 'e' ||
+             myStr[i] == 'i' ||
+             myStr[i] == 'o' ||
+             myStr[i] == 'u') {
+                 count++       
+             }                        
+         }
+         console.log(`O número de vogais é ${count}`);
+  */
+
+        // Exercício 1h)
+        /* let count = 0
+        let myStr = prompt('Escreva uma string?')
+        let myChar = prompt('Escreva um caractere?')
+
+        for (let i = 0; i < myStr.length; i++) {
+            if (myStr[i] == myChar) {
+                count++       
+            }                        
+        }
+        console.log(`O número de ocorrências de ${myChar} é de ${count}`);
+ */
+
+        // Exercício 2a)
+        const countries = ['Portugal', 'Espanha', 'Ingla', 'Angola', 'França']
+
+        // alinea i)
+        //console.log(countries.length);
+
+        // alinea ii)
+        /* console.log(countries);
+        countries.push('Itália')
+        console.log(countries); */
+
+        // alinea iii)
+        /* console.log(countries);
+        //countries[2] = 'Inglaterra'
+        countries[countries.indexOf('Ingla')] = 'Inglaterra'        
+        console.log(countries);
+ */
+        // alinea iv)
+        /* console.log(countries);
+        countries.splice(countries.indexOf('Angola'),1)
+        console.log(countries);
+ */
+        // alinea v)
+        for (let i = 0; i < countries.length; i++) {
+            console.log(countries[i]);            
+        }
+
+    </script>
+</body>
+
+</html>
