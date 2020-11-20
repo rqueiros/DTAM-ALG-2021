@@ -106,9 +106,114 @@
         console.log(countries);
  */
         // alinea v)
-        for (let i = 0; i < countries.length; i++) {
-            console.log(countries[i]);            
+        /* for (let i = 0; i < countries.length; i++) {
+            console.log(countries[i]);
+        } */
+
+        // alinea vi)        
+        /* for (let i = 0; i < countries.length; i++) {
+            if (countries[i].endsWith('a')) {
+                console.log(countries[i]);
+            }
+        } */
+
+        // alinea vii)
+        /* countries.sort()
+        console.table(countries); */
+
+        // alinea viii
+        /*  let strings = []
+         let str
+         do {
+             str = prompt('Digite uma string?')
+             if(str!='sair') {
+                 strings.push(str)
+             }
+         } while (str != 'sair');
+ 
+         console.log(strings) */
+
+        // Exercicio 2ci)
+        const numbers = [4, 5, 12, -3, 34]
+
+        /*let sum = 0
+        for (let i = 0; i < numbers.length; i++) {
+            sum = sum + numbers[i]            
         }
+
+        const average = sum / numbers.length
+        console.log(average);
+ */
+
+        // Exercicio 2cii)
+
+        /* let min = numbers[0]
+        let max = numbers[0]
+
+        for (let i = 1; i < numbers.length; i++) {
+            if (numbers[i] < min) {
+                min = numbers[i]
+            }
+            if (numbers[i] > max) {
+                max = numbers[i]
+            }
+        } */
+        // Uso alternativo através da biblioteca Math
+        // operador ... spread que permite espalhar (individualizar) todos os elementos de 
+        // um array (tranforma um array num conjunto de elementos isolados)
+
+        // min = Math.min(...numbers)
+        //max = Math.max(...numbers)
+
+        // console.log(`O número minimo é ${min} e o máximo é ${max}`);
+
+
+        // Exercicio 2ciii)
+        /* let count = 0
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] < 0) {
+                count++
+            }            
+        }
+        console.log(`A quantidade de numeros negativos é ${count}`);
+ */
+
+        // Exercicio 2civ)
+        /* let limInf = +prompt('Digite o primeiro numero?')
+        let limSup = +prompt('Digite o segundo numero?')
+        let temp = 0
+
+        // Garante que limInf é sempre inferior a limSup
+        if (limInf > limSup) {
+            temp = limSup
+            limSup = limInf
+            limInf = temp
+        }
+
+        let count = 0
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] > limInf && numbers[i] < limSup) {
+                count++
+            }
+        }
+        console.log(count); */
+
+        // Exercício 2d)
+        const park = [0, 1, 1, 1, 0, 1, 0, 0, 0, 1]
+
+        let pos
+        do {
+            pos = +prompt('Qual o lugar onde quer guardar o carro (1-10)?')
+            if (park[pos - 1] == 0) {
+                park[pos - 1] = 1
+                alert('Lugar livre! Pode por o carro!')
+            } else {
+                alert('Lugar ocupado! Tente outro lugar!')
+            }
+            alert(park);
+        } while (park.indexOf(0) != -1);
+
+
 
     </script>
 </body>
