@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F04EX05</title>
+</head>
+<body>
+    <form>
+        <label for="txtName">Name:</label>
+        <input type="text" id="txtName" required value="xxx">
+        <br>
+        <label for="txtYear">Ano:</label>
+        <input type="number" id="txtYear" min="1950" max="2020" required>
+        <br>
+        <label for="sltGenre">Género:</label>
+        <select id="sltGenre">
+            <option value="acao">AÇÃO</option>
+            <option value="aventura">AVENTURA</option>
+            <option value="estrategia">ESTRATÉGIA</option>
+            <option value="desporto" selected>DESPORTO</option>
+            <option value="simulacao">SIMULAÇÃO</option>
+        </select>
+        <br>
+        <label for="txtCover">Capa:</label>
+        <input type="url" id="txtCover">
+        <br>
+        <input type="submit" value="ADICIONAR">
+        <input type="reset" value="LIMPAR">
+                
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F04EX04</title>
+</head>
+
+<body>
+    <input type="text" id="txtDummy">
+    <p id="pDummy"></p>
+    <button>CLICA-ME</button>
+
+    <script>
+
+        // alinea d)
+        window.addEventListener('load', function () {
+            const button = document.querySelector('button')
+            const textBox = document.querySelector('input')
+            const p = document.querySelector('p')
+
+
+            // alinea a)
+            button.addEventListener('mousedown', function () {
+                // alert('Olá Mundo!')
+                //alert(textBox.value.length)
+                console.log('clique no botão');
+            })
+
+
+
+            // alinea b)
+            textBox.addEventListener('input', function () {
+                p.innerHTML = textBox.value;
+            })
+
+            // alinea c)
+            button.addEventListener('mouseup', function () {
+                console.log('Obrigado pelo clique no botão!');
+            })
+        })
+
+
+    </script>
+    
+</body>
+
+</html>
