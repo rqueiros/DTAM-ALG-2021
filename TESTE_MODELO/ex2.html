@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE MODELO - EX2</title>
+</head>
+<body>
+    <script>
+        // Pede uma string ao utilizador
+        const str = prompt('Digite uma palavra?')
+
+        // Chama a função passando a string do utilizador como parâmetro
+        const newStr = removeVogals(str)
+    
+       
+        // Imprime na consola a string sem vogais
+        console.log(newStr);
+
+        // Função que remove as vogais de uma string
+        function removeVogals(str) {
+            let newStr = ''
+            for (let i = 0; i < str.length; i++) {
+                const letter = str[i].toLowerCase()
+                if(letter!='a' && letter!='e' && letter!='i' && letter!='o' && letter!='u') {
+                    newStr += letter
+                }
+            }
+            return newStr
+        }
+
+    </script>
+</body>
+</html>

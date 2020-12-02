@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE MODELO - EX3</title>
+</head>
+<body>
+    <script>
+        let num, ant = 0, sum
+        let bigger = true
+        let nums = []
+        
+        
+        do {
+            num = +prompt('Digite um número?')
+
+            if(num > ant) {
+                nums.push(num)
+                ant = num
+            } else {
+                bigger = false
+            }
+        } while (bigger);
+
+        sum = 0
+        for (const num of nums) {
+            sum +=num
+        }
+        console.log(sum);
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE MODELO - EX1</title>
+</head>
+<body>
+    <script>
+        let num1, num2, temp, sum
+
+        // Ler o primeiro número
+        do {
+            num1 = +prompt('Digite o primeiro número?') 
+        } while (num1 < 1 || num1>99);
+
+        // Ler o segundo número
+        do {
+            num2 = +prompt('Digite o segundo número?') 
+        } while (num2 < 1 || num2>99);
+
+        // Trocar números caso o primeiro seja maior que o segundo
+        if(num1 > num2) {
+            temp = num1
+            num1 = num2
+            num2 = temp
+        }
+
+        // Somar todos os números dentro do intervalo que seja pares e múltiplos de 5
+        sum = 0
+        for (let i = num1; i <= num2; i++) {
+            if(i % 2 == 0 && i % 5 == 0) {
+                sum += i
+            }            
+        }
+
+        // Apresentar o resultado final
+        console.log(`O resultado final é ${sum}`);
+
+    </script>
+</body>
+</html>
